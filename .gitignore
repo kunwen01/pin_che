@@ -5,3 +5,4 @@
 *.sqlite3
 *.log
 *.pid
+.DS_Store
