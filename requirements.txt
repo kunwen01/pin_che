@@ -19,5 +19,6 @@ requests==2.22.0
 soupsieve==1.9.5
 sqlparse==0.3.0
 urllib3==1.25.7
+uWSGI==2.0.18
 wxpy==0.3.9.8
 zmail==0.2.6
