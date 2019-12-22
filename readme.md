@@ -13,4 +13,11 @@ uwsgi --ini xxx.ini
 uwsgi --reload xxx.pid
 #### 停止：
 uwsgi --stop xxx.pid
-
+#### setting修改  
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+#### urls修改
+from django.conf.urls.static import static  
+from django.conf import settings  
+urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+#### 静态文件处理
+python manage.py collectstatic

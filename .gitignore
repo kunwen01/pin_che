@@ -6,3 +6,5 @@
 *.log
 *.pid
 .DS_Store
+/static/admin/
+/static/rest_framework/
