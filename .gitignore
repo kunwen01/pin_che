@@ -3,3 +3,5 @@
 /.idea/
 /venv/
 *.sqlite3
+*.log
+*.pid
