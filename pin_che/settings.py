@@ -81,8 +81,16 @@ WSGI_APPLICATION = 'pin_che.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
+        'NAME': 'pin_che',                      # 你要存储数据的库名，事先要创建之
+        # 'USER': 'pinche',                       # 数据库用户名
+        # 'PASSWORD': 'Pm1GowtO85EQJRdv',         # 密码
+        'USER': 'root',                       # 数据库用户名
+        'PASSWORD': '12345678',         # 密码
+        'HOST': 'localhost',                    # 主机
+        'PORT': '3306',                         # 数据库使用的端口
     }
 }
 
