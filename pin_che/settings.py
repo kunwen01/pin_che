@@ -27,7 +27,7 @@ SECRET_KEY = 'midb+z_*c7y@u@p+((ypv47wx_lxh71l2&0jo*^^zq)xb@(c7j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '47.92.85.199']
 
 # import django_crontab
 # Application definition
