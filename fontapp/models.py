@@ -7,7 +7,7 @@ class CarShare(models.Model):
     start = models.CharField(max_length=90)
     end = models.CharField(max_length=90)
     date = models.CharField(max_length=90)
-    phone = models.IntegerField()
+    phone = models.CharField(max_length=11)
     seat = models.IntegerField()
     number = models.IntegerField()
     mark = models.TextField()
