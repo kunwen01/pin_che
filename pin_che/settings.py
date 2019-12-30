@@ -136,6 +136,6 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 # python manage.py crontab add， show ， remove
 CRONJOBS = [
-    ('0 22 * * *', 'fontapp.cron.thirdpartyinfo', '>>./thirdpartyinfo.log'),
+    ('50 6 * * *', 'fontapp.cron.thirdpartyinfo', '>>./thirdpartyinfo.log'),
     # ('*/5 * * * *', 'fontapp.cron.test', '>>./test.log'),
 ]
