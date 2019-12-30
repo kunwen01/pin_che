@@ -12,6 +12,7 @@ from django.utils import timezone
 from .models import ThirdParty
 
 def thirdpartyinfo():
+    # 你要执行的任务函数
     server = zmail.server('kunwen01@outlook.com', 'fafentuqiang123')
 
     # Retrieve mail
@@ -26,11 +27,11 @@ def thirdpartyinfo():
             m_str = m.get_text()
             phone_list = re.findall(str1, m_str)
             print(m_str)
-            # if len(phone_list) > 0:
-            #     test1 = ThirdParty(phone=phone_list[0], content=m_str)
-            #     test1.save()
+            if len(phone_list) > 0:
+                test1 = ThirdParty(phone=phone_list[0], content=m_str)
+                test1.save()
         return m_str
 
-def test():
-    print (123)
-    #你要执行的任务函数
+
+if __name__ == "__main__":
+    print (thirdpartyinfo())
