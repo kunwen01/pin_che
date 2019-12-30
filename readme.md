@@ -21,3 +21,14 @@ from django.conf import settings
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 #### 静态文件处理
 python manage.py collectstatic
+
+#### 启动定时任务
+将任务添加并生效  
+python manage.py crontab add  
+显示当前的定时任务  
+python manage.py crontab show  
+删除所有定时任务  
+python manage.py crontab remove  
+重启django服务  
+执行定时任务  
+corntab -e
