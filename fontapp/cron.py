@@ -7,7 +7,7 @@ import re
 import re
 import zmail
 from bs4 import BeautifulSoup
-from django.utils import timezone
+# from django.utils import timezone
 
 from .models import ThirdParty
 
