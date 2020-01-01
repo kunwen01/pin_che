@@ -11,13 +11,15 @@ from datetime import date
 
 def thirdpartyinfo():
     # 你要执行的任务函数
-    server = zmail.server('kunwen01@outlook.com', 'fafentuqiang123')
-    # server = zmail.server('godknows561@163.com', 'asdf123',config='163')
+    # server = zmail.server('kunwen01@outlook.com', 'fafentuqiang123')
+    server = zmail.server('godknows561@163.com', 'asdf123',pop_host='pop.163.com')
     # server = zmail.server('1101122765@qq.com', 'jkl;\'12345',smtp_host="smtp.exmail.qq.com",smtp_port=465)
 
 
     # Retrieve mail
-    latest_mails = server.get_mails(subject='拼车', start_time=date.today().strftime('%Y-%m-%y 00:00:00'))
+    # latest_mails = server.get_mails(subject='拼车', start_time=date.today().strftime('%Y-%m-%y 00:00:00'))
+    latest_mails = [server.get_latest()]
+    print(latest_mails)
     for latest_mail in latest_mails:
         test = latest_mail.get('content_html')
         soup = BeautifulSoup(test[0], "lxml")
@@ -114,5 +116,5 @@ print(msg_content)
 # 关闭连接:
 server.quit()
 if __name__ == "__main__":
-    # print (thirdpartyinfo())
+    print (thirdpartyinfo())
     pass
