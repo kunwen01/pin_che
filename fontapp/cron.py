@@ -16,7 +16,8 @@ def thirdpartyinfo():
     server = zmail.server('kunwen01@outlook.com', 'fafentuqiang123')
 
     # Retrieve mail
-    latest_mails = server.get_mails(subject='拼车', start_time=timezone.now().date().strftime('%Y-%m-%y 00:00:00'))
+    # latest_mails = server.get_mails(subject='拼车', start_time=timezone.now().date().strftime('%Y-%m-%y 00:00:00'))
+    latest_mails = [server.get_latest()]
     for latest_mail in latest_mails:
         test = latest_mail.get('content_html')
         soup = BeautifulSoup(test[0], "lxml")
