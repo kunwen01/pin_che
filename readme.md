@@ -6,7 +6,8 @@ mysql
 sudo yum install mysql-devel
 pip install -r requirements.txt  
 python manage.py makemigrations  
-python manage.py migrate  
+python manage.py migrate 
+python manage.py createsuperuser 
 #### 启动：
 uwsgi --ini xxx.ini
 #### 重启：
