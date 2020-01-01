@@ -33,3 +33,7 @@ python manage.py crontab remove
 重启django服务  
 执行定时任务  
 corntab -e
+
+#### app
+Android 公共测试证书 [下载地址]( https://service.dcloud.net.cn/build/download/bba7b740-2c85-11ea-9738-ed494c7f20d3) （注意该地址为临时下载地址，只能下载5次）
+iOS越狱包 [下载地址](https://service.dcloud.net.cn/build/download/bb95fb50-2c85-11ea-b402-9767c6c3c940) （注意该地址为临时下载地址，只能下载5次）
