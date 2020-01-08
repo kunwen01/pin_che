@@ -3,7 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 class CarShare(models.Model):
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=30,default='')
     plate = models.CharField(max_length=30)
     start = models.CharField(max_length=90)
     end = models.CharField(max_length=90)
