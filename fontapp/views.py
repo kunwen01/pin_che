@@ -24,4 +24,4 @@ class ThirdPartyViewSet(ModelViewSet):
     serializer_class = ThirdPartySerializer
 
 def index(request):
-    return HttpResponse('1')
+    return HttpResponse(0)
